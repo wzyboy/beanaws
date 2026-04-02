@@ -8,3 +8,5 @@ CLI usage:
 beanaws generate invoices/
 beanaws rename invoices/
 ```
+
+Example ledger: [`dabr-ca.bean`](/examples/dabr-ca.bean) for [dabr.ca](https://github.com/dabr-ca) AWS account usage.

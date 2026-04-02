@@ -1,0 +1,1852 @@
+option "title" "AWS Costs"
+option "operating_currency" "USD"
+
+2022-12-03 open Assets:AWS:Prepaid
+
+2022-12-03 open Expenses:AWS:CostExplorer
+
+2022-12-03 open Expenses:AWS:DataTransfer
+
+2022-12-03 open Expenses:AWS:EC2
+
+2022-12-03 open Expenses:AWS:ELB
+
+2022-12-03 open Expenses:AWS:RDS
+
+2022-12-03 open Expenses:AWS:Registrar
+
+2022-12-03 open Expenses:AWS:Route53
+
+2022-12-03 open Expenses:AWS:S3
+
+2022-12-03 open Expenses:AWS:Tax:BCPST
+
+2022-12-03 open Expenses:AWS:Tax:GST
+
+2022-12-03 open Expenses:AWS:VPC
+
+2022-12-03 open Liabilities:AWS
+
+2022-12-03 * "AWS" "AWS Invoice"
+  document: "CAIN22-1996332"
+  billing_period_start: "2022-11-01"
+  billing_period_end: "2022-11-30"
+  Expenses:AWS:S3             0.04 USD
+  Expenses:AWS:DataTransfer   1.56 USD
+  Expenses:AWS:Route53        0.52 USD
+  Expenses:AWS:Tax:BCPST      0.15 USD
+  Expenses:AWS:Tax:GST        0.11 USD
+  Liabilities:AWS            -2.38 USD
+
+2022-12-19 * "AWS" "AWS Invoice"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  Assets:AWS:Prepaid       1679.00 USD
+  Expenses:AWS:Tax:BCPST    117.53 USD
+  Expenses:AWS:Tax:GST       83.95 USD
+  Liabilities:AWS         -1880.48 USD
+
+2022-12-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "1"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-01-02 * "AWS" "AWS Invoice"
+  document: "CAIN23-51108"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  Expenses:AWS:S3              0.32 USD
+  Expenses:AWS:DataTransfer    7.23 USD
+  Expenses:AWS:ELB             0.10 USD
+  Expenses:AWS:RDS            11.20 USD
+  Expenses:AWS:EC2             0.72 USD
+  Expenses:AWS:Route53         0.58 USD
+  Expenses:AWS:Tax:BCPST       1.41 USD
+  Expenses:AWS:Tax:GST         1.02 USD
+  Liabilities:AWS            -22.58 USD
+
+2023-01-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "2"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-02-02 * "AWS" "AWS Invoice"
+  document: "CAIN23-284791"
+  billing_period_start: "2023-01-01"
+  billing_period_end: "2023-01-31"
+  Expenses:AWS:S3              0.47 USD
+  Expenses:AWS:DataTransfer    0.07 USD
+  Expenses:AWS:ELB             0.29 USD
+  Expenses:AWS:RDS             4.69 USD
+  Expenses:AWS:EC2             7.68 USD
+  Expenses:AWS:Route53         0.58 USD
+  Expenses:AWS:Tax:BCPST       0.96 USD
+  Expenses:AWS:Tax:GST         0.67 USD
+  Liabilities:AWS            -15.41 USD
+
+2023-02-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "3"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-03-03 * "AWS" "AWS Invoice"
+  document: "CAIN23-606160"
+  billing_period_start: "2023-02-01"
+  billing_period_end: "2023-02-28"
+  Expenses:AWS:S3              0.84 USD
+  Expenses:AWS:DataTransfer    0.05 USD
+  Expenses:AWS:ELB             0.22 USD
+  Expenses:AWS:RDS             5.86 USD
+  Expenses:AWS:EC2             6.18 USD
+  Expenses:AWS:Route53         0.58 USD
+  Expenses:AWS:Tax:BCPST       0.96 USD
+  Expenses:AWS:Tax:GST         0.68 USD
+  Liabilities:AWS            -15.37 USD
+
+2023-03-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "4"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-04-02 * "AWS" "AWS Invoice"
+  document: "CAIN23-726232"
+  billing_period_start: "2023-03-01"
+  billing_period_end: "2023-03-31"
+  Expenses:AWS:S3              1.30 USD
+  Expenses:AWS:DataTransfer    0.06 USD
+  Expenses:AWS:ELB             0.17 USD
+  Expenses:AWS:RDS             6.54 USD
+  Expenses:AWS:EC2             7.68 USD
+  Expenses:AWS:Route53         0.58 USD
+  Expenses:AWS:Tax:BCPST       1.14 USD
+  Expenses:AWS:Tax:GST         0.82 USD
+  Liabilities:AWS            -18.29 USD
+
+2023-04-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "5"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-05-02 * "AWS" "AWS Invoice"
+  document: "CAIN23-1010853"
+  billing_period_start: "2023-04-01"
+  billing_period_end: "2023-04-30"
+  Expenses:AWS:S3              1.72 USD
+  Expenses:AWS:DataTransfer    0.05 USD
+  Expenses:AWS:ELB             0.15 USD
+  Expenses:AWS:RDS             6.86 USD
+  Expenses:AWS:EC2             7.17 USD
+  Expenses:AWS:Route53         0.58 USD
+  Expenses:AWS:Tax:BCPST       1.15 USD
+  Expenses:AWS:Tax:GST         0.83 USD
+  Liabilities:AWS            -18.51 USD
+
+2023-05-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "6"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-06-02 * "AWS" "AWS Invoice"
+  document: "CAIN23-1088040"
+  billing_period_start: "2023-05-01"
+  billing_period_end: "2023-05-31"
+  Expenses:AWS:S3              2.24 USD
+  Expenses:AWS:DataTransfer    0.06 USD
+  Expenses:AWS:ELB             0.14 USD
+  Expenses:AWS:RDS             7.70 USD
+  Expenses:AWS:EC2             7.68 USD
+  Expenses:AWS:Route53         0.59 USD
+  Expenses:AWS:Tax:BCPST       1.29 USD
+  Expenses:AWS:Tax:GST         0.92 USD
+  Liabilities:AWS            -20.62 USD
+
+2023-06-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "7"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-07-02 * "AWS" "AWS Invoice"
+  document: "CAIN23-1438567"
+  billing_period_start: "2023-06-01"
+  billing_period_end: "2023-06-30"
+  Expenses:AWS:S3              2.64 USD
+  Expenses:AWS:DataTransfer    0.05 USD
+  Expenses:AWS:ELB             0.17 USD
+  Expenses:AWS:RDS             7.93 USD
+  Expenses:AWS:EC2             7.18 USD
+  Expenses:AWS:Route53         0.58 USD
+  Expenses:AWS:Tax:BCPST       1.29 USD
+  Expenses:AWS:Tax:GST         0.93 USD
+  Liabilities:AWS            -20.77 USD
+
+2023-07-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "8"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-08-02 * "AWS" "AWS Invoice"
+  document: "CAIN23-1544022"
+  billing_period_start: "2023-07-01"
+  billing_period_end: "2023-07-31"
+  Expenses:AWS:S3              3.17 USD
+  Expenses:AWS:DataTransfer    0.07 USD
+  Expenses:AWS:ELB             0.29 USD
+  Expenses:AWS:RDS             8.27 USD
+  Expenses:AWS:EC2             7.66 USD
+  Expenses:AWS:Route53         0.61 USD
+  Expenses:AWS:Tax:BCPST       1.40 USD
+  Expenses:AWS:Tax:GST         0.99 USD
+  Liabilities:AWS            -22.46 USD
+
+2023-08-18 * "AWS" "AWS Invoice"
+  document: "CAIN23-1734763"
+  billing_period_start: "2023-08-01"
+  billing_period_end: "2023-08-31"
+  Expenses:AWS:Registrar   13.00 USD
+  Expenses:AWS:Tax:BCPST    0.91 USD
+  Expenses:AWS:Tax:GST      0.65 USD
+  Liabilities:AWS         -14.56 USD
+
+2023-08-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "9"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-09-02 * "AWS" "AWS Invoice"
+  document: "CAIN23-1827309"
+  billing_period_start: "2023-08-01"
+  billing_period_end: "2023-08-31"
+  Expenses:AWS:S3              3.76 USD
+  Expenses:AWS:DataTransfer    0.07 USD
+  Expenses:AWS:ELB             0.25 USD
+  Expenses:AWS:RDS             9.21 USD
+  Expenses:AWS:EC2             7.68 USD
+  Expenses:AWS:Route53         0.61 USD
+  Expenses:AWS:Tax:BCPST       1.50 USD
+  Expenses:AWS:Tax:GST         1.07 USD
+  Liabilities:AWS            -24.15 USD
+
+2023-09-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "10"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-10-02 * "AWS" "AWS Invoice"
+  document: "CAIN23-1974723"
+  billing_period_start: "2023-09-01"
+  billing_period_end: "2023-09-30"
+  Expenses:AWS:S3              4.32 USD
+  Expenses:AWS:DataTransfer    0.06 USD
+  Expenses:AWS:ELB             0.23 USD
+  Expenses:AWS:RDS             9.37 USD
+  Expenses:AWS:EC2             7.18 USD
+  Expenses:AWS:Route53         0.60 USD
+  Expenses:AWS:Tax:BCPST       1.52 USD
+  Expenses:AWS:Tax:GST         1.09 USD
+  Liabilities:AWS            -24.37 USD
+
+2023-10-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "11"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-11-02 * "AWS" "AWS Invoice"
+  document: "CAIN23-2220904"
+  billing_period_start: "2023-10-01"
+  billing_period_end: "2023-10-31"
+  Expenses:AWS:S3              4.95 USD
+  Expenses:AWS:DataTransfer    0.76 USD
+  Expenses:AWS:ELB             0.20 USD
+  Expenses:AWS:RDS            10.24 USD
+  Expenses:AWS:EC2             7.68 USD
+  Expenses:AWS:Route53         0.60 USD
+  Expenses:AWS:Tax:BCPST       1.71 USD
+  Expenses:AWS:Tax:GST         1.22 USD
+  Liabilities:AWS            -27.36 USD
+
+2023-11-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "12"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2023-12-03 * "AWS" "AWS Invoice"
+  document: "CAIN23-2525218"
+  billing_period_start: "2023-11-01"
+  billing_period_end: "2023-11-30"
+  Expenses:AWS:S3              5.54 USD
+  Expenses:AWS:DataTransfer    0.99 USD
+  Expenses:AWS:ELB             0.22 USD
+  Expenses:AWS:RDS            10.74 USD
+  Expenses:AWS:EC2             7.18 USD
+  Expenses:AWS:Route53         0.61 USD
+  Expenses:AWS:Tax:BCPST       1.77 USD
+  Expenses:AWS:Tax:GST         1.27 USD
+  Liabilities:AWS            -28.32 USD
+
+2023-12-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "13"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-01-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-23284"
+  billing_period_start: "2023-12-01"
+  billing_period_end: "2023-12-31"
+  Expenses:AWS:S3              6.39 USD
+  Expenses:AWS:DataTransfer    2.57 USD
+  Expenses:AWS:ELB            17.17 USD
+  Expenses:AWS:RDS            10.99 USD
+  Expenses:AWS:EC2            16.76 USD
+  Expenses:AWS:Route53         0.63 USD
+  Expenses:AWS:Tax:BCPST       3.81 USD
+  Expenses:AWS:Tax:GST         2.73 USD
+  Liabilities:AWS            -61.05 USD
+
+2024-01-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "14"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-02-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-242026"
+  billing_period_start: "2024-01-01"
+  billing_period_end: "2024-01-31"
+  Expenses:AWS:S3              6.98 USD
+  Expenses:AWS:DataTransfer    2.29 USD
+  Expenses:AWS:ELB            17.14 USD
+  Expenses:AWS:RDS            12.13 USD
+  Expenses:AWS:EC2            16.74 USD
+  Expenses:AWS:Route53         0.62 USD
+  Expenses:AWS:Tax:BCPST       3.91 USD
+  Expenses:AWS:Tax:GST         2.80 USD
+  Liabilities:AWS            -62.61 USD
+
+2024-02-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "15"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-03-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-460222"
+  billing_period_start: "2024-02-01"
+  billing_period_end: "2024-02-29"
+  Expenses:AWS:S3              7.21 USD
+  Expenses:AWS:DataTransfer    1.09 USD
+  Expenses:AWS:ELB            15.96 USD
+  Expenses:AWS:RDS            11.30 USD
+  Expenses:AWS:EC2            15.76 USD
+  Expenses:AWS:VPC            17.41 USD
+  Expenses:AWS:Route53         0.61 USD
+  Expenses:AWS:Tax:BCPST       4.85 USD
+  Expenses:AWS:Tax:GST         3.47 USD
+  Liabilities:AWS            -77.66 USD
+
+2024-03-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "16"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-04-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-725015"
+  billing_period_start: "2024-03-01"
+  billing_period_end: "2024-03-31"
+  Expenses:AWS:S3              7.66 USD
+  Expenses:AWS:DataTransfer    2.38 USD
+  Expenses:AWS:ELB            17.06 USD
+  Expenses:AWS:RDS            11.61 USD
+  Expenses:AWS:EC2            16.76 USD
+  Expenses:AWS:VPC            18.61 USD
+  Expenses:AWS:Route53         0.62 USD
+  Expenses:AWS:Tax:BCPST       5.22 USD
+  Expenses:AWS:Tax:GST         3.73 USD
+  Liabilities:AWS            -83.65 USD
+
+2024-04-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "17"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-05-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-920279"
+  billing_period_start: "2024-04-01"
+  billing_period_end: "2024-04-30"
+  Expenses:AWS:S3              7.96 USD
+  Expenses:AWS:DataTransfer    1.49 USD
+  Expenses:AWS:ELB            16.51 USD
+  Expenses:AWS:RDS            11.55 USD
+  Expenses:AWS:EC2             8.64 USD
+  Expenses:AWS:VPC            14.64 USD
+  Expenses:AWS:Route53         0.63 USD
+  Expenses:AWS:Tax:BCPST       4.29 USD
+  Expenses:AWS:Tax:GST         3.07 USD
+  Liabilities:AWS            -68.78 USD
+
+2024-05-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "18"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-06-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-1174092"
+  billing_period_start: "2024-05-01"
+  billing_period_end: "2024-05-31"
+  Expenses:AWS:S3              8.39 USD
+  Expenses:AWS:DataTransfer    2.37 USD
+  Expenses:AWS:ELB            17.13 USD
+  Expenses:AWS:RDS            11.80 USD
+  Expenses:AWS:EC2             8.38 USD
+  Expenses:AWS:VPC            14.89 USD
+  Expenses:AWS:Route53         0.63 USD
+  Expenses:AWS:Tax:BCPST       4.46 USD
+  Expenses:AWS:Tax:GST         3.18 USD
+  Liabilities:AWS            -71.23 USD
+
+2024-06-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "19"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-07-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-1539602"
+  billing_period_start: "2024-06-01"
+  billing_period_end: "2024-06-30"
+  Expenses:AWS:S3              8.76 USD
+  Expenses:AWS:DataTransfer    1.51 USD
+  Expenses:AWS:ELB            16.53 USD
+  Expenses:AWS:RDS            11.58 USD
+  Expenses:AWS:EC2             8.13 USD
+  Expenses:AWS:VPC            14.41 USD
+  Expenses:AWS:Route53         0.63 USD
+  Expenses:AWS:Tax:BCPST       4.31 USD
+  Expenses:AWS:Tax:GST         3.09 USD
+  Liabilities:AWS            -68.95 USD
+
+2024-07-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "20"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-08-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-1710035"
+  billing_period_start: "2024-07-01"
+  billing_period_end: "2024-07-31"
+  Expenses:AWS:S3              9.26 USD
+  Expenses:AWS:DataTransfer    1.65 USD
+  Expenses:AWS:ELB            17.06 USD
+  Expenses:AWS:RDS            12.15 USD
+  Expenses:AWS:EC2             9.17 USD
+  Expenses:AWS:VPC            15.24 USD
+  Expenses:AWS:Route53         0.63 USD
+  Expenses:AWS:Tax:BCPST       4.56 USD
+  Expenses:AWS:Tax:GST         3.25 USD
+  Liabilities:AWS            -72.97 USD
+
+2024-08-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "21"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-09-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-1905059"
+  billing_period_start: "2024-08-01"
+  billing_period_end: "2024-08-31"
+  Expenses:AWS:S3              9.89 USD
+  Expenses:AWS:DataTransfer    1.89 USD
+  Expenses:AWS:ELB            17.03 USD
+  Expenses:AWS:RDS            12.89 USD
+  Expenses:AWS:EC2            16.78 USD
+  Expenses:AWS:VPC            18.67 USD
+  Expenses:AWS:Route53         0.63 USD
+  Expenses:AWS:Tax:BCPST       5.43 USD
+  Expenses:AWS:Tax:GST         3.87 USD
+  Liabilities:AWS            -87.08 USD
+
+2024-09-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "22"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-10-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-2241510"
+  billing_period_start: "2024-09-01"
+  billing_period_end: "2024-09-30"
+  Expenses:AWS:ELB            16.50 USD
+  Expenses:AWS:EC2            16.26 USD
+  Expenses:AWS:Route53         0.63 USD
+  Expenses:AWS:VPC            18.02 USD
+  Expenses:AWS:RDS            12.95 USD
+  Expenses:AWS:S3             10.18 USD
+  Expenses:AWS:DataTransfer    1.22 USD
+  Expenses:AWS:Tax:BCPST       5.31 USD
+  Expenses:AWS:Tax:GST         3.79 USD
+  Liabilities:AWS            -84.86 USD
+
+2024-10-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "23"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-11-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-2386931"
+  billing_period_start: "2024-10-01"
+  billing_period_end: "2024-10-31"
+  Expenses:AWS:ELB             17.08 USD
+  Expenses:AWS:EC2             16.76 USD
+  Expenses:AWS:Route53          0.64 USD
+  Expenses:AWS:VPC             18.62 USD
+  Expenses:AWS:RDS             13.10 USD
+  Expenses:AWS:S3              10.76 USD
+  Expenses:AWS:DataTransfer     1.61 USD
+  Expenses:AWS:Registrar       13.00 USD
+  Expenses:AWS:Tax:BCPST        6.40 USD
+  Expenses:AWS:Tax:GST          4.58 USD
+  Liabilities:AWS            -102.55 USD
+
+2024-11-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "24"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2024-12-02 * "AWS" "AWS Invoice"
+  document: "CAIN24-2590224"
+  billing_period_start: "2024-11-01"
+  billing_period_end: "2024-11-30"
+  Expenses:AWS:ELB            16.55 USD
+  Expenses:AWS:EC2            16.26 USD
+  Expenses:AWS:Route53         0.63 USD
+  Expenses:AWS:VPC            18.01 USD
+  Expenses:AWS:RDS            13.34 USD
+  Expenses:AWS:S3             11.20 USD
+  Expenses:AWS:DataTransfer    1.54 USD
+  Expenses:AWS:Tax:BCPST       5.42 USD
+  Expenses:AWS:Tax:GST         3.88 USD
+  Liabilities:AWS            -86.83 USD
+
+2024-12-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "25"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-01-02 * "AWS" "AWS Invoice"
+  document: "CAIN25-188382"
+  billing_period_start: "2024-12-01"
+  billing_period_end: "2024-12-31"
+  Expenses:AWS:ELB            17.09 USD
+  Expenses:AWS:EC2            16.76 USD
+  Expenses:AWS:Route53         0.62 USD
+  Expenses:AWS:VPC            19.32 USD
+  Expenses:AWS:RDS            13.33 USD
+  Expenses:AWS:S3             11.76 USD
+  Expenses:AWS:DataTransfer    2.20 USD
+  Expenses:AWS:Tax:BCPST       5.66 USD
+  Expenses:AWS:Tax:GST         4.06 USD
+  Liabilities:AWS            -90.80 USD
+
+2025-01-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "26"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-02-02 * "AWS" "AWS Invoice"
+  document: "CAIN25-446017"
+  billing_period_start: "2025-01-01"
+  billing_period_end: "2025-01-31"
+  Expenses:AWS:ELB            17.13 USD
+  Expenses:AWS:EC2            16.76 USD
+  Expenses:AWS:Route53         0.63 USD
+  Expenses:AWS:VPC            18.67 USD
+  Expenses:AWS:RDS            14.08 USD
+  Expenses:AWS:S3             12.21 USD
+  Expenses:AWS:DataTransfer    2.05 USD
+  Expenses:AWS:Tax:BCPST       5.70 USD
+  Expenses:AWS:Tax:GST         4.08 USD
+  Liabilities:AWS            -91.31 USD
+
+2025-02-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "27"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-03-01 * "AWS" "AWS Invoice"
+  document: "CAIN25-502599"
+  billing_period_start: "2025-02-01"
+  billing_period_end: "2025-02-28"
+  Expenses:AWS:ELB            15.46 USD
+  Expenses:AWS:EC2            15.26 USD
+  Expenses:AWS:Route53         0.63 USD
+  Expenses:AWS:VPC            16.81 USD
+  Expenses:AWS:RDS            13.65 USD
+  Expenses:AWS:S3             12.54 USD
+  Expenses:AWS:DataTransfer    1.09 USD
+  Expenses:AWS:Tax:BCPST       5.27 USD
+  Expenses:AWS:Tax:GST         3.78 USD
+  Liabilities:AWS            -84.49 USD
+
+2025-03-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "28"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-04-02 * "AWS" "AWS Invoice"
+  document: "CAIN25-928909"
+  billing_period_start: "2025-03-01"
+  billing_period_end: "2025-03-31"
+  Expenses:AWS:ELB            17.18 USD
+  Expenses:AWS:EC2            16.76 USD
+  Expenses:AWS:Route53         0.65 USD
+  Expenses:AWS:VPC            18.74 USD
+  Expenses:AWS:RDS            13.79 USD
+  Expenses:AWS:DataTransfer    2.85 USD
+  Expenses:AWS:S3             13.26 USD
+  Expenses:AWS:Tax:BCPST       5.83 USD
+  Expenses:AWS:Tax:GST         4.16 USD
+  Liabilities:AWS            -93.22 USD
+
+2025-04-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "29"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-05-02 * "AWS" "AWS Invoice"
+  document: "CAIN25-1140661"
+  billing_period_start: "2025-04-01"
+  billing_period_end: "2025-04-30"
+  Expenses:AWS:ELB            16.64 USD
+  Expenses:AWS:EC2            16.26 USD
+  Expenses:AWS:Route53         0.64 USD
+  Expenses:AWS:VPC            18.12 USD
+  Expenses:AWS:RDS            14.16 USD
+  Expenses:AWS:DataTransfer    2.66 USD
+  Expenses:AWS:S3             13.76 USD
+  Expenses:AWS:Tax:BCPST       5.76 USD
+  Expenses:AWS:Tax:GST         4.11 USD
+  Liabilities:AWS            -92.11 USD
+
+2025-05-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "30"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-06-02 * "AWS" "AWS Invoice"
+  document: "CAIN25-1461365"
+  billing_period_start: "2025-05-01"
+  billing_period_end: "2025-05-31"
+  Expenses:AWS:ELB            17.15 USD
+  Expenses:AWS:EC2            16.82 USD
+  Expenses:AWS:Route53         0.64 USD
+  Expenses:AWS:VPC            18.62 USD
+  Expenses:AWS:RDS            14.22 USD
+  Expenses:AWS:DataTransfer    3.15 USD
+  Expenses:AWS:S3             14.36 USD
+  Expenses:AWS:Tax:BCPST       5.95 USD
+  Expenses:AWS:Tax:GST         4.25 USD
+  Liabilities:AWS            -95.16 USD
+
+2025-06-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "31"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-07-01 * "AWS" "AWS Invoice"
+  document: "CAIN25-1641317"
+  billing_period_start: "2025-06-01"
+  billing_period_end: "2025-06-30"
+  Expenses:AWS:ELB            16.52 USD
+  Expenses:AWS:EC2            16.90 USD
+  Expenses:AWS:Route53         0.65 USD
+  Expenses:AWS:VPC            18.07 USD
+  Expenses:AWS:RDS            14.80 USD
+  Expenses:AWS:DataTransfer    2.35 USD
+  Expenses:AWS:S3             14.83 USD
+  Expenses:AWS:Tax:BCPST       5.89 USD
+  Expenses:AWS:Tax:GST         4.20 USD
+  Liabilities:AWS            -94.21 USD
+
+2025-07-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "32"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-08-01 * "AWS" "AWS Invoice"
+  document: "CAIN25-1798582"
+  billing_period_start: "2025-07-01"
+  billing_period_end: "2025-07-31"
+  Expenses:AWS:ELB            17.11 USD
+  Expenses:AWS:EC2            17.40 USD
+  Expenses:AWS:Route53         0.66 USD
+  Expenses:AWS:VPC            18.82 USD
+  Expenses:AWS:RDS            14.27 USD
+  Expenses:AWS:CostExplorer    0.01 USD
+  Expenses:AWS:DataTransfer    3.22 USD
+  Expenses:AWS:S3             15.45 USD
+  Expenses:AWS:Tax:BCPST       6.09 USD
+  Expenses:AWS:Tax:GST         4.34 USD
+  Liabilities:AWS            -97.37 USD
+
+2025-08-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "33"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-09-01 * "AWS" "AWS Invoice"
+  document: "CAIN25-2220805"
+  billing_period_start: "2025-08-01"
+  billing_period_end: "2025-08-31"
+  Expenses:AWS:ELB             17.34 USD
+  Expenses:AWS:EC2             17.94 USD
+  Expenses:AWS:Route53          0.65 USD
+  Expenses:AWS:VPC             18.89 USD
+  Expenses:AWS:RDS             21.95 USD
+  Expenses:AWS:DataTransfer     3.67 USD
+  Expenses:AWS:S3              15.81 USD
+  Expenses:AWS:Tax:BCPST        6.74 USD
+  Expenses:AWS:Tax:GST          4.81 USD
+  Liabilities:AWS            -107.80 USD
+
+2025-09-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "34"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-10-01 * "AWS" "AWS Invoice"
+  document: "CAIN25-2244583"
+  billing_period_start: "2025-09-01"
+  billing_period_end: "2025-09-30"
+  Expenses:AWS:ELB             17.98 USD
+  Expenses:AWS:EC2             50.57 USD
+  Expenses:AWS:Route53          0.65 USD
+  Expenses:AWS:VPC             18.16 USD
+  Expenses:AWS:RDS             16.03 USD
+  Expenses:AWS:DataTransfer     4.99 USD
+  Expenses:AWS:S3              16.20 USD
+  Expenses:AWS:Tax:BCPST        8.72 USD
+  Expenses:AWS:Tax:GST          6.23 USD
+  Liabilities:AWS            -139.53 USD
+
+2025-10-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "35"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-11-01 * "AWS" "AWS Invoice"
+  document: "CAIN25-2526395"
+  billing_period_start: "2025-10-01"
+  billing_period_end: "2025-10-31"
+  Expenses:AWS:ELB             21.35 USD
+  Expenses:AWS:EC2             69.00 USD
+  Expenses:AWS:Route53          0.67 USD
+  Expenses:AWS:VPC             18.75 USD
+  Expenses:AWS:RDS             16.62 USD
+  Expenses:AWS:DataTransfer     9.10 USD
+  Expenses:AWS:S3              16.73 USD
+  Expenses:AWS:Registrar       14.00 USD
+  Expenses:AWS:Tax:BCPST       11.64 USD
+  Expenses:AWS:Tax:GST          8.31 USD
+  Liabilities:AWS            -186.17 USD
+
+2025-11-19 * "AWS" "AWS Amortization CAIN22-2048623"
+  document: "CAIN22-2048623"
+  billing_period_start: "2022-12-01"
+  billing_period_end: "2022-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2022-12-19"
+  ri_months: "36"
+  amortization_month: "36"
+  Expenses:AWS:RDS     46.60 USD
+  Assets:AWS:Prepaid  -46.60 USD
+
+2025-12-01 * "AWS" "AWS Invoice"
+  document: "CAIN25-2894390"
+  billing_period_start: "2025-11-01"
+  billing_period_end: "2025-11-30"
+  Expenses:AWS:ELB             25.61 USD
+  Expenses:AWS:S3              17.15 USD
+  Expenses:AWS:EC2             66.79 USD
+  Expenses:AWS:VPC             18.12 USD
+  Expenses:AWS:DataTransfer    14.57 USD
+  Expenses:AWS:RDS             17.29 USD
+  Expenses:AWS:Route53          0.67 USD
+  Expenses:AWS:Tax:BCPST       11.21 USD
+  Expenses:AWS:Tax:GST          8.01 USD
+  Liabilities:AWS            -179.42 USD
+
+2025-12-18 * "AWS" "AWS Invoice"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  Assets:AWS:Prepaid       1679.00 USD
+  Expenses:AWS:Tax:BCPST    117.53 USD
+  Expenses:AWS:Tax:GST       83.95 USD
+  Liabilities:AWS         -1880.48 USD
+
+2025-12-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "1"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2025-12-24 * "AWS" "AWS Invoice"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  Assets:AWS:Prepaid       802.00 USD
+  Expenses:AWS:Tax:BCPST    56.14 USD
+  Expenses:AWS:Tax:GST      40.10 USD
+  Liabilities:AWS         -898.24 USD
+
+2025-12-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "1"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-01-01 * "AWS" "AWS Invoice"
+  document: "CAIN26-232162"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  Expenses:AWS:ELB             28.80 USD
+  Expenses:AWS:Route53          0.67 USD
+  Expenses:AWS:S3               8.22 USD
+  Expenses:AWS:EC2             54.78 USD
+  Expenses:AWS:VPC             19.37 USD
+  Expenses:AWS:DataTransfer    28.15 USD
+  Expenses:AWS:RDS             17.63 USD
+  Expenses:AWS:Tax:BCPST       11.03 USD
+  Expenses:AWS:Tax:GST          7.88 USD
+  Liabilities:AWS            -176.53 USD
+
+2026-01-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "2"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-01-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "2"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-02-01 * "AWS" "AWS Invoice"
+  document: "CAIN26-278067"
+  billing_period_start: "2026-01-01"
+  billing_period_end: "2026-01-31"
+  Expenses:AWS:ELB             29.73 USD
+  Expenses:AWS:Route53          0.65 USD
+  Expenses:AWS:S3               4.87 USD
+  Expenses:AWS:EC2             10.94 USD
+  Expenses:AWS:VPC             18.64 USD
+  Expenses:AWS:DataTransfer    30.57 USD
+  Expenses:AWS:RDS             19.58 USD
+  Expenses:AWS:Tax:BCPST        8.05 USD
+  Expenses:AWS:Tax:GST          5.75 USD
+  Liabilities:AWS            -128.78 USD
+
+2026-02-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "3"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-02-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "3"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-03-01 * "AWS" "AWS Invoice"
+  document: "CAIN26-659888"
+  billing_period_start: "2026-02-01"
+  billing_period_end: "2026-02-28"
+  Expenses:AWS:ELB             27.57 USD
+  Expenses:AWS:S3               4.77 USD
+  Expenses:AWS:EC2             10.17 USD
+  Expenses:AWS:VPC             16.89 USD
+  Expenses:AWS:DataTransfer    27.82 USD
+  Expenses:AWS:RDS             19.03 USD
+  Expenses:AWS:Route53          0.62 USD
+  Expenses:AWS:Tax:BCPST        7.48 USD
+  Expenses:AWS:Tax:GST          5.34 USD
+  Liabilities:AWS            -119.69 USD
+
+2026-03-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "4"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-03-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "4"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-04-01 * "AWS" "AWS Invoice"
+  document: "CAIN26-1000105"
+  billing_period_start: "2026-03-01"
+  billing_period_end: "2026-03-31"
+  Expenses:AWS:ELB             31.62 USD
+  Expenses:AWS:EC2             10.94 USD
+  Expenses:AWS:Route53          0.63 USD
+  Expenses:AWS:VPC             18.65 USD
+  Expenses:AWS:RDS             20.02 USD
+  Expenses:AWS:S3               5.03 USD
+  Expenses:AWS:DataTransfer    33.14 USD
+  Expenses:AWS:Tax:BCPST        8.40 USD
+  Expenses:AWS:Tax:GST          6.00 USD
+  Liabilities:AWS            -134.43 USD
+
+2026-04-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "5"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-04-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "5"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-05-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "6"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-05-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "6"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-06-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "7"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-06-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "7"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-07-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "8"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-07-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "8"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-08-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "9"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-08-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "9"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-09-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "10"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-09-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "10"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-10-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "11"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-10-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "11"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-11-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "12"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-11-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "12"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2026-12-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "13"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2026-12-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "13"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-01-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "14"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-01-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "14"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-02-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "15"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-02-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "15"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-03-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "16"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-03-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "16"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-04-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "17"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-04-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "17"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-05-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "18"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-05-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "18"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-06-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "19"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-06-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "19"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-07-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "20"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-07-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "20"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-08-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "21"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-08-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "21"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-09-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "22"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-09-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "22"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-10-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "23"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-10-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "23"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-11-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "24"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-11-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "24"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2027-12-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "25"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2027-12-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "25"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2028-01-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "26"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2028-01-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "26"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2028-02-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "27"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2028-02-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "27"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2028-03-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "28"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2028-03-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "28"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2028-04-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "29"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2028-04-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "29"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2028-05-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "30"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2028-05-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "30"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2028-06-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "31"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2028-06-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "31"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2028-07-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "32"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2028-07-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "32"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2028-08-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "33"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2028-08-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "33"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2028-09-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "34"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2028-09-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "34"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2028-10-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "35"
+  Expenses:AWS:RDS     46.64 USD
+  Assets:AWS:Prepaid  -46.64 USD
+
+2028-10-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "35"
+  Expenses:AWS:EC2     22.28 USD
+  Assets:AWS:Prepaid  -22.28 USD
+
+2028-11-18 * "AWS" "AWS Amortization CAIN25-2977137"
+  document: "CAIN25-2977137"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Relational Database Service"
+  ri_start_date: "2025-12-18"
+  ri_months: "36"
+  amortization_month: "36"
+  Expenses:AWS:RDS     46.60 USD
+  Assets:AWS:Prepaid  -46.60 USD
+
+2028-11-24 * "AWS" "AWS Amortization CAIN25-2977291"
+  document: "CAIN25-2977291"
+  billing_period_start: "2025-12-01"
+  billing_period_end: "2025-12-31"
+  service: "Amazon Elastic Compute Cloud"
+  ri_start_date: "2025-12-24"
+  ri_months: "36"
+  amortization_month: "36"
+  Expenses:AWS:EC2     22.20 USD
+  Assets:AWS:Prepaid  -22.20 USD
