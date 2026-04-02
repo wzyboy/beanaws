@@ -75,23 +75,15 @@ class AWSDocument:
     service_charges: list[ServiceCharge]
 
 
-class AWSDocumentParser:
-    def get_full_text(self, pdf_path: str | Path) -> str:
-        with open(pdf_path, 'rb') as f:
-            pdf = pdftotext.PDF(f, physical=True)
-        return unicodedata.normalize('NFKC', '\n\n'.join(pdf))
+def get_full_text(pdf_path: str | Path) -> str:
+    with open(pdf_path, 'rb') as f:
+        pdf = pdftotext.PDF(f, physical=True)
+    return unicodedata.normalize('NFKC', '\n\n'.join(pdf))
 
-    def identify(self, filepath: str) -> bool:
-        if not filepath.lower().endswith('.pdf'):
-            return False
-        text = self.get_full_text(filepath)
-        return 'TOTAL AMOUNT / MONTANT TOTAL' in text and (
-            'AWS Service Charges' in text or 'console.aws.amazon.com' in text
-        )
 
-    def parse_document(self, filepath: str | Path) -> AWSDocument:
-        text = self.get_full_text(filepath)
-        return parse_aws_document(text)
+def parse_pdf_document(filepath: str | Path) -> AWSDocument:
+    text = get_full_text(filepath)
+    return parse_aws_document(text)
 
 
 def parse_aws_document(text: str) -> AWSDocument:
@@ -445,9 +437,8 @@ def require_match(pattern: str, text: str) -> str:
 
 
 def gather_public_entries(pdf_paths: list[Path]) -> data.Entries:
-    importer = AWSDocumentParser()
     entries: data.Entries = []
-    documents = [importer.parse_document(path) for path in pdf_paths]
+    documents = [parse_pdf_document(path) for path in pdf_paths]
     documents.sort(key=lambda doc: (doc.document_date, doc.number))
     for document in documents:
         entries.extend(build_document_entries(document))
@@ -494,10 +485,9 @@ def generate_public_bean_text(pdf_paths: list[Path], *, title: str = 'AWS Costs'
 
 
 def rename_pdfs_with_dates(pdf_paths: list[Path]) -> list[tuple[Path, Path]]:
-    importer = AWSDocumentParser()
     renamed: list[tuple[Path, Path]] = []
     for pdf_path in sorted(pdf_paths):
-        dest_path = build_dated_pdf_path(pdf_path, importer.parse_document(pdf_path).document_date)
+        dest_path = build_dated_pdf_path(pdf_path, parse_pdf_document(pdf_path).document_date)
         if dest_path == pdf_path:
             continue
         if dest_path.exists():

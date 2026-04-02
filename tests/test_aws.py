@@ -8,11 +8,11 @@ from beancount.core import data
 
 from beanaws.core import AWS_LIABILITY_ACCOUNT
 from beanaws.core import AWS_PREPAID_ACCOUNT
-from beanaws.core import AWSDocumentParser
 from beanaws.core import build_dated_pdf_path
 from beanaws.core import build_document_entries
 from beanaws.core import generate_public_bean_text
 from beanaws.core import parse_aws_document
+from beanaws.core import parse_pdf_document
 from beanaws.core import rename_pdfs_with_dates
 from beanaws.core import split_monthly_amounts
 
@@ -133,15 +133,6 @@ Amazon Route 53 USD 0.65
   BC PST / BC TVP USD 0.04
 """.strip()
 
-
-def test_identify_matches_aws_pdf_text(monkeypatch) -> None:
-    importer = AWSDocumentParser()
-    monkeypatch.setattr(importer, 'get_full_text', lambda filepath: MONTHLY_INVOICE_TEXT)
-
-    assert importer.identify('/tmp/aws.pdf') is True
-    assert importer.identify('/tmp/aws.csv') is False
-
-
 def test_parse_monthly_invoice_extracts_services_and_taxes() -> None:
     document = parse_aws_document(MONTHLY_INVOICE_TEXT)
 
@@ -246,7 +237,7 @@ def test_generate_public_bean_text_is_sanitized(monkeypatch, tmp_path: Path) -> 
         invoice_path: parse_aws_document(MONTHLY_INVOICE_TEXT),
         ri_path: parse_aws_document(RI_INVOICE_TEXT),
     }
-    monkeypatch.setattr('beanaws.core.AWSDocumentParser.parse_document', lambda self, path: documents[Path(path)])
+    monkeypatch.setattr('beanaws.core.parse_pdf_document', lambda path: documents[Path(path)])
 
     bean_text = generate_public_bean_text([invoice_path, ri_path])
 
@@ -280,7 +271,7 @@ def test_rename_pdfs_with_dates_renames_in_place(monkeypatch, tmp_path: Path) ->
     pdf_path = tmp_path / 'CAIN26-659888.pdf'
     pdf_path.write_text('x')
     document = parse_aws_document(MONTHLY_INVOICE_TEXT)
-    monkeypatch.setattr('beanaws.core.AWSDocumentParser.parse_document', lambda self, path: document)
+    monkeypatch.setattr('beanaws.core.parse_pdf_document', lambda path: document)
 
     renamed = rename_pdfs_with_dates([pdf_path])
 
